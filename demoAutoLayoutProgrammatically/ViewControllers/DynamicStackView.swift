@@ -11,51 +11,38 @@ import UIKit
 class DynamicStackView: UIViewController {
     var scrollView = UIScrollView()
     var baseStackView = UIStackView()
+    var tmpview = UIView()
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func loadView() {
+        super.loadView()
         self.setUpUI()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
     func setUpUI() {
         func setUpScrollView() {
+            
             self.view.addSubview(self.scrollView)
-            print("self.view frame \(self.view.frame)")
-            print("safeareinsets \(view.safeAreaInsets)")
             self.scrollView.translatesAutoresizingMaskIntoConstraints = false
-            self.scrollView.backgroundColor = .cyan
-            self.scrollView.leadingAnchor.constraint(equalTo: (self.view.superview?.leadingAnchor)!, constant: 0).isActive = true
-            self.scrollView.trailingAnchor.constraint(equalTo: (self.view.superview?.trailingAnchor)!, constant: 0).isActive = true
-            self.scrollView.topAnchor.constraint(equalTo: (self.view.superview?.topAnchor)!, constant: 0).isActive = true
-            self.scrollView.bottomAnchor.constraint(equalTo: (self.view.superview?.bottomAnchor)!, constant: 0).isActive = true
-            self.scrollView.heightAnchor.constraint(equalTo: (self.view.superview?.heightAnchor)!, constant: 0).isActive = true
-            self.scrollView.widthAnchor.constraint(equalTo: (self.view.superview?.widthAnchor)!, constant: 0).isActive = true
+            
             self.view.addSubview(self.scrollView)
-            
-            self.scrollView.frame = view.bounds
-            self.scrollView.contentSize = CGSize(width:self.view.bounds.width, height: self.view.bounds.height)
-
-            
+            self.scrollView.translatesAutoresizingMaskIntoConstraints = false
+            let insets = UIEdgeInsets(top: 20.0, left: 0.0, bottom: 0.0, right: 0.0)
+            scrollView.contentInset = insets
+            scrollView.scrollIndicatorInsets = insets
         }
         
         func setUpStackView() {
-            self.scrollView.addSubview(baseStackView)
+            
             self.baseStackView.translatesAutoresizingMaskIntoConstraints = false
-            self.baseStackView.trailingAnchor.constraint(equalTo: self.scrollView.trailingAnchor, constant: 0).isActive = true
-            self.baseStackView.leadingAnchor.constraint(equalTo: self.scrollView.leadingAnchor, constant: 0).isActive = true
-            self.baseStackView.topAnchor.constraint(equalTo: self.scrollView.topAnchor, constant: 0).isActive = true
-//            self.baseStackView.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor, constant: 0).isActive = true
-            self.baseStackView.heightAnchor.constraint(equalTo: self.scrollView.heightAnchor).isActive = true
-            self.baseStackView.widthAnchor.constraint(equalTo: self.scrollView.widthAnchor, constant: 0).isActive = true
-            
-            
+            self.scrollView.addSubview(baseStackView)
+        
             let btnAddItem = UIButton()
             btnAddItem.translatesAutoresizingMaskIntoConstraints = false
             btnAddItem.setTitle("Add Item", for: .normal)
@@ -68,6 +55,16 @@ class DynamicStackView: UIViewController {
             self.baseStackView.distribution = .equalSpacing
             self.baseStackView.spacing = 0
             
+            self.scrollView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive  = true
+            self.scrollView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive  = true
+            self.scrollView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive  = true
+            self.scrollView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive  = true
+            
+            self.baseStackView.trailingAnchor.constraint(equalTo: self.scrollView.trailingAnchor, constant: 0).isActive = true
+            self.baseStackView.leadingAnchor.constraint(equalTo: self.scrollView.leadingAnchor, constant: 0).isActive = true
+            self.baseStackView.topAnchor.constraint(equalTo: self.scrollView.topAnchor, constant: 0).isActive = true
+            self.baseStackView.bottomAnchor.constraint(equalTo: self.scrollView.bottomAnchor, constant: 0).isActive = true
+            self.baseStackView.widthAnchor.constraint(equalTo: self.view.widthAnchor, constant: 0).isActive = true
             
         }
         setUpScrollView()

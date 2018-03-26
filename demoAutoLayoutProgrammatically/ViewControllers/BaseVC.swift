@@ -26,21 +26,16 @@ class BaseVC: UIViewController {
         self.view.backgroundColor = .white
     }
     
-    
     override func loadView() {
         super.loadView()
-        
         self.containerView.translatesAutoresizingMaskIntoConstraints = false
         self.containerView.layer.borderWidth = 1.0
         self.containerView.layer.borderColor = UIColor.black.cgColor
         self.containerView.layoutMargins = UIEdgeInsets(top: 8.0, left: 8.0, bottom: 8.0, right: 8.0)
         let vc = UIViewController()
         self.addAsChildVC(childVC: vc)
-        
         self.uiSetUp()
-        
         showRecipe(recipe: recipes[currentRecipeIndex])
-        
     }
     
     
@@ -69,15 +64,7 @@ class BaseVC: UIViewController {
             newView?.layoutMarginsGuide.topAnchor.constraint(equalTo: containerMargins.topAnchor, constant: 0).isActive = true
             newView?.layoutMarginsGuide.bottomAnchor.constraint(equalTo: containerMargins.bottomAnchor, constant: 0).isActive = true
             newView?.layoutMarginsGuide.leadingAnchor.constraint(equalTo: containerMargins.leadingAnchor, constant: 0).isActive = true
-            newView?.layoutMarginsGuide.trailingAnchor.constraint(equalTo: containerMargins.trailingAnchor, constant: 0).isActive = true
-           
-//            newView?.snp.makeConstraints({ (childView) in
-//                childView.topMargin.equalTo(containerMargins)
-//                childView.leadingMargin.equalTo(containerMargins)
-//                childView.bottomMargin.equalTo(containerMargins)
-//                childView.trailingMargin.equalTo(containerMargins)
-//            })
-            
+            newView?.layoutMarginsGuide.trailingAnchor.constraint(equalTo: containerMargins.trailingAnchor, constant: 0).isActive = true    
             
         }, completion: { [unowned self] _ in
             oldViewController.removeFromParentViewController()

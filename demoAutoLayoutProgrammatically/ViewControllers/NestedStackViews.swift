@@ -25,33 +25,23 @@ class NestedStackViews: UIViewController {
     var imgView = UIImageView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        self.setUpUI()
-        
-        // Do any additional setup after loading the view.
     }
     
-    //    override func viewDidLayoutSubviews() {
-    //        super.viewDidLayoutSubviews()
-    //         self.setUpUI()
-    //    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func loadView() {
+        super.loadView()
         self.setUpUI()
     }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
     func setUpUI() {
         
         func setUserdDetailStackView() {
             baseStackView.addArrangedSubview(userDetailStackView)
             userDetailStackView.translatesAutoresizingMaskIntoConstraints = false
-//            userDetailStackView.heightAnchor.constraint(equalToConstant: 105).isActive = true
-            
             
             userDetailStackView.axis = .horizontal
             userDetailStackView.alignment = .fill
@@ -147,23 +137,10 @@ class NestedStackViews: UIViewController {
         baseStackView.layoutMarginsGuide.leadingAnchor.constraint(equalTo: self.view.layoutMarginsGuide.leadingAnchor).isActive  = true
         baseStackView.layoutMarginsGuide.trailingAnchor.constraint(equalTo: self.view.layoutMarginsGuide.trailingAnchor).isActive  = true
         
-        
-//        baseStackView.snp.makeConstraints { (make) -> Void in
-//            make.topMargin.equalTo(self.view).offset(0)
-//            make.leadingMargin.equalTo(self.view).offset(0)
-//            make.bottomMargin.equalTo(self.view).offset(0)
-//            make.trailingMargin.equalTo(self.view).offset(0)
-//        }
-        //        baseStackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor, constant: 0).isActive = true
-        //        baseStackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor, constant: 0).isActive = true
-        //        baseStackView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: 0).isActive = true
-        //        baseStackView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: 0).isActive = true
-        
         baseStackView.axis = .vertical
         baseStackView.alignment = .fill
         baseStackView.distribution = .fill
         baseStackView.spacing = 8
-        //        baseStackView.changeBGColor(To: .lightText)
         
         setUserdDetailStackView()
         setTextView()
