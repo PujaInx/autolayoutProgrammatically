@@ -11,7 +11,6 @@ import UIKit
 class DynamicStackView: UIViewController {
     var scrollView = UIScrollView()
     var baseStackView = UIStackView()
-    var tmpview = UIView()
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -99,7 +98,6 @@ class DynamicStackView: UIViewController {
     }
     
     // MARK: Convenience
-    
     /// Creates a horizontal stack view entry to add within the parent `stackView`.
     private func createEntryView() -> UIView {
         let date = DateFormatter.localizedString(from: NSDate() as Date, dateStyle: .short, timeStyle: .none)
@@ -121,9 +119,7 @@ class DynamicStackView: UIViewController {
         numberLabel.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.headline)
         numberLabel.setContentHuggingPriority(UILayoutPriority(rawValue: UILayoutPriority.RawValue(Double(UILayoutPriority.defaultLow.rawValue) - 1.0)), for: .horizontal)
         numberLabel.setContentCompressionResistancePriority(UILayoutPriority(rawValue: UILayoutPriority.RawValue(Double(UILayoutPriority.defaultHigh.rawValue) - 1.0)), for: .horizontal)
-        
-        //numberLabel.backgroundColor = .yellow
-        
+
         let deleteButton = UIButton(type: .roundedRect)
         deleteButton.setTitle("Delete", for: .normal)
         deleteButton.addTarget(self, action: #selector(deleteStackView(sender:)), for: .touchUpInside)

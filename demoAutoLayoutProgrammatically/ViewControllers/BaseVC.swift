@@ -20,7 +20,6 @@ class BaseVC: UIViewController {
         "Previous": .red,
         ]
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
@@ -64,7 +63,7 @@ class BaseVC: UIViewController {
             newView?.layoutMarginsGuide.topAnchor.constraint(equalTo: containerMargins.topAnchor, constant: 0).isActive = true
             newView?.layoutMarginsGuide.bottomAnchor.constraint(equalTo: containerMargins.bottomAnchor, constant: 0).isActive = true
             newView?.layoutMarginsGuide.leadingAnchor.constraint(equalTo: containerMargins.leadingAnchor, constant: 0).isActive = true
-            newView?.layoutMarginsGuide.trailingAnchor.constraint(equalTo: containerMargins.trailingAnchor, constant: 0).isActive = true    
+            newView?.layoutMarginsGuide.trailingAnchor.constraint(equalTo: containerMargins.trailingAnchor, constant: 0).isActive = true
             
         }, completion: { [unowned self] _ in
             oldViewController.removeFromParentViewController()

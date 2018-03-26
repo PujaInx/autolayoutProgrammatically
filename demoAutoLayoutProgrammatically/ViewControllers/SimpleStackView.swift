@@ -17,11 +17,11 @@ class SimpleStackView: UIViewController {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func loadView() {
+        super.loadView()
         self.uiSetUp()
     }
-
+    
     func uiSetUp() {
         func addConstraint(To stackView:() -> UIStackView)  {
             let stack = stackView()

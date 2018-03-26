@@ -29,6 +29,12 @@ extension Recipe {
         case CookbookStoryboardIdentifier.TwoEqualWidthViews.rawValue:
             vc = TwoEqualWidthViews()
             break
+        case CookbookStoryboardIdentifier.TwoDifferentWidthViews.rawValue:
+            vc = TwoDifferentWidthViews()
+            break
+        case CookbookStoryboardIdentifier.TwoViewsWithComplexWidths.rawValue:
+            vc = TwoViewsWithComplexWidths()
+            break
         default: break
             
         }

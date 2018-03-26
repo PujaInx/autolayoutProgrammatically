@@ -15,6 +15,8 @@
 		F533C434205CD8E20007C438 /* DynamicStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F533C433205CD8E20007C438 /* DynamicStackView.swift */; };
 		F59FF390205B8DC7002127D1 /* NestedStackViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FF38F205B8DC7002127D1 /* NestedStackViews.swift */; };
 		F59FF392205BD049002127D1 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59FF391205BD049002127D1 /* BaseVC.swift */; };
+		F5CF3C5E2068FB8000497DD4 /* TwoDifferentWidthViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CF3C5D2068FB8000497DD4 /* TwoDifferentWidthViews.swift */; };
+		F5CF3C602069055700497DD4 /* TwoViewsWithComplexWidths.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5CF3C5F2069055700497DD4 /* TwoViewsWithComplexWidths.swift */; };
 		F5D252392061263100D65975 /* TwoEqualWidthViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D252382061263000D65975 /* TwoEqualWidthViews.swift */; };
 		F5EB71732057DD9300B4F6C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EB71722057DD9300B4F6C1 /* AppDelegate.swift */; };
 		F5EB717A2057DD9300B4F6C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EB71792057DD9300B4F6C1 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		F533C433205CD8E20007C438 /* DynamicStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicStackView.swift; sourceTree = "<group>"; };
 		F59FF38F205B8DC7002127D1 /* NestedStackViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedStackViews.swift; sourceTree = "<group>"; };
 		F59FF391205BD049002127D1 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		F5CF3C5D2068FB8000497DD4 /* TwoDifferentWidthViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoDifferentWidthViews.swift; sourceTree = "<group>"; };
+		F5CF3C5F2069055700497DD4 /* TwoViewsWithComplexWidths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewsWithComplexWidths.swift; sourceTree = "<group>"; };
 		F5D252382061263000D65975 /* TwoEqualWidthViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoEqualWidthViews.swift; sourceTree = "<group>"; };
 		F5EB716F2057DD9300B4F6C1 /* demoAutoLayoutProgrammatically.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoAutoLayoutProgrammatically.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EB71722057DD9300B4F6C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 				F59FF391205BD049002127D1 /* BaseVC.swift */,
 				F533C433205CD8E20007C438 /* DynamicStackView.swift */,
 				F5D252382061263000D65975 /* TwoEqualWidthViews.swift */,
+				F5CF3C5D2068FB8000497DD4 /* TwoDifferentWidthViews.swift */,
+				F5CF3C5F2069055700497DD4 /* TwoViewsWithComplexWidths.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -250,8 +256,10 @@
 				F59FF392205BD049002127D1 /* BaseVC.swift in Sources */,
 				F5D252392061263100D65975 /* TwoEqualWidthViews.swift in Sources */,
 				F52AB7FC205918A10066652E /* CookbookStoryboardIdentifier.swift in Sources */,
+				F5CF3C5E2068FB8000497DD4 /* TwoDifferentWidthViews.swift in Sources */,
 				F5EB71732057DD9300B4F6C1 /* AppDelegate.swift in Sources */,
 				F533C434205CD8E20007C438 /* DynamicStackView.swift in Sources */,
+				F5CF3C602069055700497DD4 /* TwoViewsWithComplexWidths.swift in Sources */,
 				F52AB801205920E20066652E /* SimpleStackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
