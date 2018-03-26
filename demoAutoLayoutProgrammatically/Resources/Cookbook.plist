@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Title</key>
+		<string>Simple Stack View</string>
+		<key>Identifier</key>
+		<string>SimpleStackView</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Nested Stack Views</string>
+		<key>Identifier</key>
+		<string>NestedStackViews</string>
+	</dict>
+    <dict>
+        <key>Title</key>
+        <string>Dynamic Stack View</string>
+        <key>Identifier</key>
+        <string>DynamicStackView</string>
+    </dict>
+    <dict>
+        <key>Title</key>
+        <string>Two Equal Width Views</string>
+        <key>Identifier</key>
+        <string>TwoEqualWidthViews</string>
+    </dict>
+    <dict>
+        <key>Title</key>
+        <string>Two Views with Different Widths</string>
+        <key>Identifier</key>
+        <string>TwoDifferentWidthViews</string>
+    </dict>
+    <dict>
+        <key>Title</key>
+        <string>Two Views with Complex Widths</string>
+        <key>Identifier</key>
+        <string>TwoViewsWithComplexWidths</string>
+    </dict>
+</array>
+</plist>
