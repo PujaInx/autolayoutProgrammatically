@@ -35,6 +35,12 @@ extension Recipe {
         case CookbookStoryboardIdentifier.TwoViewsWithComplexWidths.rawValue:
             vc = TwoViewsWithComplexWidths()
             break
+        case CookbookStoryboardIdentifier.SimpleLabelAndTextField.rawValue:
+            vc = SimpleLabelAndTextField()
+            break
+        case CookbookStoryboardIdentifier.DynamicHeightLabelAndTextField.rawValue:
+            vc = DynamicHeightLabelAndTextField()
+            break
         default: break
             
         }

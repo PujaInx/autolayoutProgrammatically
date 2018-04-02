@@ -52,6 +52,9 @@ class SimpleStackView: UIViewController {
             self.imageView.contentMode = .scaleAspectFit
             self.imageView.translatesAutoresizingMaskIntoConstraints = false
             
+            
+            
+            
             self.btnEdit.setTitle("Edit", for: .normal)
             self.btnEdit.setTitleColor(.black, for: .normal)
             self.btnEdit.translatesAutoresizingMaskIntoConstraints = false

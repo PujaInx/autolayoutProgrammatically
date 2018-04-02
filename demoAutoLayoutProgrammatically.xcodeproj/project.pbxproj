@@ -22,6 +22,9 @@
 		F5EB717A2057DD9300B4F6C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5EB71792057DD9300B4F6C1 /* Assets.xcassets */; };
 		F5EB717D2057DD9300B4F6C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5EB717B2057DD9300B4F6C1 /* LaunchScreen.storyboard */; };
 		F5EB71882057DD9400B4F6C1 /* demoAutoLayoutProgrammaticallyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EB71872057DD9400B4F6C1 /* demoAutoLayoutProgrammaticallyTests.swift */; };
+		F5F82C85206A22C4008C7F5F /* SimpleLabelAndTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F82C84206A22C4008C7F5F /* SimpleLabelAndTextField.swift */; };
+		F5F82C87206A293A008C7F5F /* DynamicHeightLabelAndTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F82C86206A293A008C7F5F /* DynamicHeightLabelAndTextField.swift */; };
+		F5F82C89206A3D49008C7F5F /* FixedHeightColumns.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5F82C88206A3D49008C7F5F /* FixedHeightColumns.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		F5EB71832057DD9300B4F6C1 /* demoAutoLayoutProgrammaticallyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoAutoLayoutProgrammaticallyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5EB71872057DD9400B4F6C1 /* demoAutoLayoutProgrammaticallyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoAutoLayoutProgrammaticallyTests.swift; sourceTree = "<group>"; };
 		F5EB71892057DD9400B4F6C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5F82C84206A22C4008C7F5F /* SimpleLabelAndTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLabelAndTextField.swift; sourceTree = "<group>"; };
+		F5F82C86206A293A008C7F5F /* DynamicHeightLabelAndTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicHeightLabelAndTextField.swift; sourceTree = "<group>"; };
+		F5F82C88206A3D49008C7F5F /* FixedHeightColumns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedHeightColumns.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,9 @@
 				F5D252382061263000D65975 /* TwoEqualWidthViews.swift */,
 				F5CF3C5D2068FB8000497DD4 /* TwoDifferentWidthViews.swift */,
 				F5CF3C5F2069055700497DD4 /* TwoViewsWithComplexWidths.swift */,
+				F5F82C84206A22C4008C7F5F /* SimpleLabelAndTextField.swift */,
+				F5F82C86206A293A008C7F5F /* DynamicHeightLabelAndTextField.swift */,
+				F5F82C88206A3D49008C7F5F /* FixedHeightColumns.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -256,11 +265,14 @@
 				F59FF392205BD049002127D1 /* BaseVC.swift in Sources */,
 				F5D252392061263100D65975 /* TwoEqualWidthViews.swift in Sources */,
 				F52AB7FC205918A10066652E /* CookbookStoryboardIdentifier.swift in Sources */,
+				F5F82C85206A22C4008C7F5F /* SimpleLabelAndTextField.swift in Sources */,
 				F5CF3C5E2068FB8000497DD4 /* TwoDifferentWidthViews.swift in Sources */,
 				F5EB71732057DD9300B4F6C1 /* AppDelegate.swift in Sources */,
+				F5F82C89206A3D49008C7F5F /* FixedHeightColumns.swift in Sources */,
 				F533C434205CD8E20007C438 /* DynamicStackView.swift in Sources */,
 				F5CF3C602069055700497DD4 /* TwoViewsWithComplexWidths.swift in Sources */,
 				F52AB801205920E20066652E /* SimpleStackView.swift in Sources */,
+				F5F82C87206A293A008C7F5F /* DynamicHeightLabelAndTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

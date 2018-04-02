@@ -14,29 +14,41 @@
 		<key>Identifier</key>
 		<string>NestedStackViews</string>
 	</dict>
-    <dict>
-        <key>Title</key>
-        <string>Dynamic Stack View</string>
-        <key>Identifier</key>
-        <string>DynamicStackView</string>
-    </dict>
-    <dict>
-        <key>Title</key>
-        <string>Two Equal Width Views</string>
-        <key>Identifier</key>
-        <string>TwoEqualWidthViews</string>
-    </dict>
-    <dict>
-        <key>Title</key>
-        <string>Two Views with Different Widths</string>
-        <key>Identifier</key>
-        <string>TwoDifferentWidthViews</string>
-    </dict>
-    <dict>
-        <key>Title</key>
-        <string>Two Views with Complex Widths</string>
-        <key>Identifier</key>
-        <string>TwoViewsWithComplexWidths</string>
-    </dict>
+	<dict>
+		<key>Title</key>
+		<string>Dynamic Stack View</string>
+		<key>Identifier</key>
+		<string>DynamicStackView</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Two Equal Width Views</string>
+		<key>Identifier</key>
+		<string>TwoEqualWidthViews</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Two Views with Different Widths</string>
+		<key>Identifier</key>
+		<string>TwoDifferentWidthViews</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Two Views with Complex Widths</string>
+		<key>Identifier</key>
+		<string>TwoViewsWithComplexWidths</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Simple Label And TextField</string>
+		<key>Identifier</key>
+		<string>SimpleLabelAndTextField</string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Dynamic Height Label And TextField</string>
+		<key>Identifier</key>
+		<string>DynamicHeightLabelAndTextField</string>
+	</dict>
 </array>
 </plist>
